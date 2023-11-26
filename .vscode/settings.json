@@ -2,7 +2,8 @@
     "cSpell.words": [
         "DOCKERHUB",
         "Psycopg",
-        "Roldan"
+        "Roldan",
+        "testpass"
     ],
     "python.analysis.autoImportCompletions": false,
     "python.analysis.typeCheckingMode": "off"
