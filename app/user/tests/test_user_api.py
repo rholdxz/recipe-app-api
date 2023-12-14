@@ -88,7 +88,7 @@ class PublicUserApiTests(TestCase):
         """Test returns error if credentials invalid."""
         create_user(email='test@example.com', password='goodpass')
 
-        payload = {'email': 'test@example.com','password': 'badpass'}
+        payload = {'email': 'test@example.com', 'password': 'badpass'}
         res = self.client.post(TOKEN_URL, payload)
 
         self.assertNotIn('token', res.data)
@@ -108,6 +108,7 @@ class PublicUserApiTests(TestCase):
 
         self.assertEqual(res.status_code, status.HTTP_401_UNAUTHORIZED)
 
+
 class PrivateUserApiTests(TestCase):
     """Test API request that require authentication."""
 
@@ -119,7 +120,6 @@ class PrivateUserApiTests(TestCase):
         )
         self.client = APIClient()
         self.client.force_authenticate(user=self.user)
-
 
     def test_retrieve_profile_success(self):
         """Test retrieving profile for logged in user."""
