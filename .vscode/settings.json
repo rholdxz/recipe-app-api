@@ -8,6 +8,7 @@
         "Psycopg",
         "Roldan",
         "testpass",
+        "viewset",
         "viewsets"
     ],
     "python.analysis.autoImportCompletions": false,
