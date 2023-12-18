@@ -9,6 +9,7 @@
         "Psycopg",
         "Roldan",
         "testpass",
+        "uwsgi",
         "viewset",
         "viewsets"
     ],
